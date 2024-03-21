@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, arial;
+}
+.header{
+    background-color: white;
+    display: flex;
+    height: 55px;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hamburger-icon {
+    width: 25px;
+    padding: 8px;
+}
+
+.hamburger:hover {
+    background-color: rgba(180, 180, 180, 0.4);
+}
+
+.youtube-logo {
+    width: 100px;
+    padding: 18px 16px;
+    cursor: pointer;
+}
+
+.mid-section {
+    flex: 0 1 732px;
+    display: flex;
+    min-width: 0;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 38.4px;
+    border: 1px solid rgb(190, 190, 190);
+    border-right: 1px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 0 4px 0 16px;
+    min-width: 0;
+    margin-left: 32px;
+}
+
+
+
+.search-bar::placeholder {
+    font-size: 16px;
+    font-family: 500;
+}
+
+.search-button {
+    width: 64px;
+    height: 40px;
+    border: 1px solid rgb(190, 190, 190);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.voice-search-button,
+.upload-button,
+.notifications-button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.search-button-img,
+.voice-search-button-img {
+    width: 24px;
+}
+
+.right-section {
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upload-button,
+.notifications-button,
+.profile-picture {
+    margin: 0;
+    background-color: white;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.upload-button:hover,
+.notifications-button:hover {
+    background-color: rgba(190, 190, 190, 0.3);
+}
+
+.upload-button-img,
+.notifications-button-img {
+    width: 24px;
+}
+
+@media (max-width: 650px) {
+    .mid-section {
+        justify-content: flex-end;
+    }
+
+    .search-button {
+        background-color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .voice-search-button {
+        background-color: white;
+        margin: 0
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .right-section {
+        min-width: 120px;
+    }
+
+}
